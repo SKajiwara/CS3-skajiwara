@@ -56,15 +56,13 @@ int main(int argc, char *argv[])
 		int test1[] = { 5, 2, 4, 5, 3 };
 		int test2[] = { 3, 100 };
 		int test3[] = { 2, 2, 2, 2 };
-		vector<int> test_vect1 (test1, test1 + 5);
-		num = 5;
-		assert(falling_apart( num, Alice, Bob, test_vect1 ) == "11 8" );
-		vector<int> test_vect2 (test2, test2 + 2);
-		num = 2;
-		assert(falling_apart( num, Alice, Bob, test_vect2 ) == "100 3" );
-		vector<int> test_vect3 (test3, test3 + 4);
-		num = 4;
-		assert(falling_apart( num, Alice, Bob, test_vect3 ) == "4 4");
+		int sizes[] = {5, 2, 4};
+		vector<int> test_vect1 ( test1, test1 + sizes[0] );
+		assert(falling_apart( sizes[0], Alice, Bob, test_vect1) == "11 8" );
+		vector<int> test_vect2 ( test2, test2 + sizes[1] );
+		assert(falling_apart( sizes[1], Alice, Bob, test_vect2 ) == "100 3" );
+		vector<int> test_vect3 ( test3, test3 + sizes[2] );
+		assert(falling_apart( sizes[2], Alice, Bob, test_vect3 ) == "4 4");
 		cout << "all test cases passed!\n";
 	}
 	else
