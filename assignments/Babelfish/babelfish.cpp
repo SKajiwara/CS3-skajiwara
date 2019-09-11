@@ -6,7 +6,6 @@
 #include <cassert>
 #include <cstring>
 #include <time.h>
-#include <vector>
 using namespace std;
 string answer( unordered_map<string, string> &dict, const string word )
 {
@@ -17,20 +16,12 @@ string answer( unordered_map<string, string> &dict, const string word )
 }
 void test()
 {
-	unordered_map<string, string> test;
-	test.insert(make_pair("Sune", "Shin"));
-	test.insert(make_pair("Atama", "Head"));
-	test.insert(make_pair("Onaka", "Stomach"));
-	test.insert(make_pair("Ashi", "Legs"));
-	test.insert(make_pair("Kusa", "Weed"));
-	test.insert(make_pair("Shippo", "Tail"));
-	test.insert(make_pair("Kitanai", "Dirty"));
-	string word = "Shippo";
-	assert(answer(test, word) == "Tail");
-	word = "Onaka";
-	assert(answer(test, word) == "Stomach");
-	word = "Sune";
-	assert(answer(test, word) == "Shin");
+	unordered_map<string, string> test = {{"Sune", "Shin"},
+	{"Atama", "Head"}, {"Onaka", "Stomach"}, {"Ashi", "Legs"},
+	{"Kusa", "Weed"}, {"Shippo", "Tail"}, {"Kitanai", "Dirty"}};
+	assert(answer(test, "Shippo") == "Tail");
+	assert(answer(test, "Onaka") == "Stomach");
+	assert(answer(test, "Sune") == "Shin");
 	cout << "All test cases passed" << endl;
 }
 void kattis()
