@@ -1,38 +1,38 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cassert>
 using namespace std;
-int answer()
+//g++ -std=c++11 CD.cpp // USE SET
+int counter(vector<int>& ns, int& cd, int count)
 {
-	
-	
-	
-
-	int ans=0;
-	return ans;
+	if( binary_search(ns.begin(), ns.end(), cd)) count++;
+	return count;
 }
+
 void kattis()
 {
-	int i, N, M, temp;
-	cin >> N >> M;
-	
-	if (N<M) //SWAP FUNCTION
-	{
-		N = temp;
-		N = M;
-		M = temp;
-	}
-	
-	for (i=0; i < N && cin >> temp; i++)
-		
-	
-
-
-
-	answer();
+	int i, N,M,cd, count;
+    vector<int> ns;
+    vector<int>::iterator n;
+    while( cin >>N>>M && N!=0 && M!=0)
+    {
+        count = 0;
+        ns.clear();
+        for (i=0; i<N&&cin>>cd;i++) ns.push_back(cd);   
+        n= ns.begin();
+        for (i=0; i<M&&cin>>cd;i++) count = counter(ns, cd, count);
+        cout << count;
+    }
 }
 void test()
 {
+	vector<int> test = {1, 5555, 6666, 99999, 100000, 1000000};
+	int nums[3] = {5555, 99999, 200000};
+	int count = 0;
+	assert(counter(test, nums[0],count)==1);
+	assert(counter(test, nums[1],count)==1);
+	assert(counter(test, nums[2],count)==0);
 	cout << "All test cases passed" << endl;	
 }
 int main(int argc, char* argv[])
