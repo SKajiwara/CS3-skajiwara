@@ -19,9 +19,12 @@ void test()
 	unordered_map<string, string> test = {{"Sune", "Shin"},
 	{"Atama", "Head"}, {"Onaka", "Stomach"}, {"Ashi", "Legs"},
 	{"Kusa", "Weed"}, {"Shippo", "Tail"}, {"Kitanai", "Dirty"}};
+	
+	
+	
 	assert(answer(test, "Shippo") == "Tail");
 	assert(answer(test, "Onaka") == "Stomach");
-	assert(answer(test, "Sune") == "Shin");
+	assert(answer(test, "Suhydfjhasjbhdhjane") == "eh");
 	cout << "All test cases passed" << endl;
 }
 void kattis()
