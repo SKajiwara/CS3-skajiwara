@@ -34,6 +34,7 @@ void test()
 	assert(counter(test, nums[1],count)==1);
 	assert(counter(test, nums[2],count)==0);
 	cout << "All test cases passed" << endl;	
+	
 }
 int main(int argc, char* argv[])
 {
