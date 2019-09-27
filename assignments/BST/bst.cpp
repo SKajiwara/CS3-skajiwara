@@ -3,10 +3,11 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
+#define MAX 5000;
 // Binary Tree - ADT
 class BinaryTree {
     // vector to store binary tree data of char types
-    private: vector<char> bt;
+    private: vector<int> bt;
     // meta data
     private: int root, size, max_size;
     private: void inorder(int root) {
@@ -107,7 +108,7 @@ public:
         / \
        5   2
       / \
-     3   1
+     3   1https://d2l.coloradomesa.edu/d2l/le/content/176833/Home?itemIdentifier=D2L.LE.Content.ContentObject.ModuleCO-2586145
      Uses a recursive helper that recurs over the tree,
      swapping the left/right pointers.
     */
