@@ -7,7 +7,7 @@ using namespace std;
 // Binary Tree - ADT
 class BinaryTree {
     // vector to store binary tree data of char types
-    private: vector<int> bt;
+    private: vector<string> bt;
     // meta data
     private: int root, size, max_size;
     private: void inorder(int root) {
@@ -118,5 +118,9 @@ public:
 };
 int main()
 {
+  BinaryTree test(10);
+  test.updateRoot("A");
+
+  test.print();
   return 0;
 }

@@ -7,10 +7,9 @@
 using namespace std;
 int answer(vector<int>& list, const int Fmax)
 {
-	int ans, temp = 0;
-	int count = 0;
+	int ans, temp, count = 0;
 	vector<int>::iterator head, it = list.begin();
-	// When capacity C is 1 and there is fruit weights 1 in Forest 
+	// When capacity C is 1 and there is fruit weights 1 in Forest
 	if (Fmax==1 && find(list.begin(), list.end(), 1) != list.end()) return 1;
 	while( (distance(it,list.end())>1 && distance(it,list.end())>=count) )
 	{
@@ -19,14 +18,12 @@ int answer(vector<int>& list, const int Fmax)
 		if( Fmax > ans) temp = 1;
 		while (distance(head,list.end())>= 1)
 		{
-			if( Fmax >= (ans + *head)) 
-			{	
+			if( Fmax >= (ans + *head))
+			{
 				ans += *head;
 				temp++;
-		
-				head++;
 			}
-			else head++;
+			head++;
 		}
 		if (temp>count) count = temp;
 		it++;
@@ -41,7 +38,7 @@ void test()
 	assert(answer(test, 10) == 5);
 	test = {8};
 	assert(answer(test, 5 ) == 0);
-	
+
 }
 void kattis()
 {
