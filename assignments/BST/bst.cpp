@@ -2,12 +2,13 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <fstream>
 using namespace std;
 #define MAX 5000;
 // Binary Tree - ADT
 class BinaryTree {
     // vector to store binary tree data of char types
-    private: vector<string> bt;
+    private: vector<char> bt;
     // meta data
     private: int root, size, max_size;
     private: void inorder(int root) {
@@ -118,8 +119,16 @@ public:
 };
 int main()
 {
+  ifstream inf("data.in");
+  ofstream outf("answer.ot");
   BinaryTree test(10);
-  test.updateRoot("A");
+
+  test.updateRoot('A');
+  char temp;
+  while(!inf.eof()){
+    inf >> temp;
+    test.insertNode(temp);
+  }
 
   test.print();
   return 0;
