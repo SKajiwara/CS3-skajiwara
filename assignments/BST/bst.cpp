@@ -83,7 +83,7 @@ public:
         }
     }
     // print all nodes level by level
-    void print() const {
+    void print(ofstream& outf) const {
         for(auto ch: this->bt)
             if (ch == '\0') cout << "- ";
             else cout << ch << " ";
