@@ -26,3 +26,10 @@ Icpctutorial
     - solution accepted 50 points
     - 3 test case 30 points
     - screenshot 10 points
+BST
+    - I DIDN'T DO IT
+SSSP
+    - solved using
+    - solution accepted 50 points
+    - 3 test case 30 points
+    - screenshot 10 points
