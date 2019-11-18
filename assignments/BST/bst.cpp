@@ -8,7 +8,10 @@ using namespace std;
 // Binary Tree - ADT
 class BinaryTree {
     // vector to store binary tree data of char types
-    private: vector<char> bt;
+  private:
+  vector<char> bt;
+  size_t count;
+
     // meta data
     private: int root, size, max_size;
     private: void inorder(int root) {
@@ -130,6 +133,6 @@ int main()
     test.insertNode(temp);
   }
 
-  test.print();
+  test.print(outf);
   return 0;
 }
