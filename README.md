@@ -33,3 +33,8 @@ SSSP
     - solution accepted 50 points
     - 3 test case 30 points
     - screenshot 10 points
+Minimum Spinning Tree
+    - solved using Kruskal MST
+    - solution not accepted accepted
+    - 3 test case 30 points
+    - screenshot one of the test cases didn't pass

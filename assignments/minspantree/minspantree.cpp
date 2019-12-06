@@ -54,12 +54,19 @@ vector<string> answer(Graph& graph){
 }
 
 void test() {
-  Graph test1( 5, 5 ), test2( 3, 5 ), test3( 4, 4 );
+  Graph test1( 5, 5 ), test2( 5, 3 ), test3( 2, 2 );
   test1.addEdge(0,1,4); test1.addEdge(1,3,4); test1.addEdge(1,2,4);
   test1.addEdge(2,3,4); test1.addEdge(3,4,4);
-  vector<string> assert{ "16", "0 1",  "1 3", "2 3", "3 4"};
-  assert( answer(test1) == assert );
+  test2.addEdge(1,2,3); test2.addEdge(2,3,4); test2.addEdge(3,1,5);
+  test3.addEdge(0,1,3);
 
+  vector<string> assert1{ "16", "0 1",  "1 3", "2 3", "3 4" };
+  vector<string> assert2{ "7", "1 2",  "2 3" };
+  vector<string> assert3{ "3", "0 1" };
+
+  assert( answer(test1) == assert1 );
+  assert( answer(test2) == assert2 );
+  assert( answer(test3) == assert3 );
 }
 
 void kattis() {
