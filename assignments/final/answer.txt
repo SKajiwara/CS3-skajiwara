@@ -1,0 +1,33 @@
+Bubble Sort: 0.00835506
+Selection Sort: 0.00416396
+Insertion Sort: 0.00434908
+Shell Sort: 0.000213224
+Quick Sort: 0.000136125
+Merge Sort: 0.00110921
+Heap Sort: 0.000303337
+Algorithm.h Sort: 3.14137e-05
+Algorithm.h Stable Sort: 3.58567e-05
+Sequential Search: 2.731e-07
+Binary Search: 2.939e-07
+Bubble Sort: 0.229384
+Selection Sort: 0.100914
+Insertion Sort: 0.103571
+Shell Sort: 0.0013309
+Quick Sort: 0.000800826
+Merge Sort: 0.00607272
+Heap Sort: 0.00182023
+Algorithm.h Sort: 0.000141611
+Algorithm.h Stable Sort: 0.00016987
+Sequential Search: 4.121e-07
+Binary Search: 3.719e-07
+Bubble Sort: 0.835489
+Selection Sort: 0.390929
+Insertion Sort: 0.404151
+Shell Sort: 0.00263898
+Quick Sort: 0.00163241
+Merge Sort: 0.0125242
+Heap Sort: 0.0038159
+Algorithm.h Sort: 0.000280472
+Algorithm.h Stable Sort: 0.000305349
+Sequential Search: 4.025e-07
+Binary Search: 4.878e-07
