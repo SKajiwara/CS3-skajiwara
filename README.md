@@ -38,3 +38,10 @@ Minimum Spinning Tree
     - solution not accepted accepted
     - 3 test case 30 points
     - screenshot one of the test cases didn't pass
+Final Project
+    - can generate 100k, 500k, 1m 5 points
+    - All sorting methods working 45 points
+    - Run 10 times 15 points
+    - searching methods working except BST 10/15 points
+    - I didn't sort in order
+    - No bonus
